@@ -4,16 +4,30 @@ import Star from './../img/Vector (3).png'
 import Heart from './../img/Vector (1).png'
 import CollegeLogo from './../img/Rectangle 21.png'
 import Download from './../img/Vector (2).png'
+import Location from './../img/Vector (4).png'
 export const SingleResult = () => {
     return (
         <div  className="single-result">
                     <div className="upper-single">
-                        <img src={Play} alt=""/>
-                        <div className="upper-left">
-                                <p>Featured</p>
+                    <div class="top-up">
+                        <div class="upper-left">
+                          <p>Featured</p>
+                  </div>
+
+                      <div class="upper-right">
+                        <p> 4.0 <img src={Star} alt=""/></p>
+                    </div>
+                      </div>
+                      
+                        <div class="youtube-div">
+                         <center>
+                          <img src={Play} alt=""/>
+                         </center>
                         </div>
-                        <div className="upper-right">
-                           <p> 4.0 <img src={Star} alt=""/></p>
+
+                        <div className="location-upper">
+                           <h6>Maharishi Dayanand University...</h6>
+                           <p > <img src={Location} alt="" /> Delhi Bypass, Rohtak, Haryana</p>
                         </div>
 
                     </div>
