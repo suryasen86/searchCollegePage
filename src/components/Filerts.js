@@ -195,7 +195,7 @@ export const Filerts = () => {
             <div className="accordion-item" id="it-is-border-nonoe">
               <h2 className="accordion-header" id="panelsStayOpen-headingFour" id="it-is-border-nonoe">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour"
-                id="single-check-section" id="it-is-border-nonoe"
+                id="single-check-section"  
                 >
                 Affiliated to
                 </button>
@@ -298,7 +298,7 @@ export const Filerts = () => {
             <div className="accordion-item" id="it-is-border-nonoe">
               <h2 className="accordion-header" id="panelsStayOpen-headingFive" id="it-is-border-nonoe">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive"
-                id="single-check-section" id="it-is-border-nonoe"
+                id="single-check-section"  
                 >
                 city / town
                 </button>
@@ -399,7 +399,7 @@ export const Filerts = () => {
             <div className="accordion-item" id="it-is-border-nonoe">
               <h2 className="accordion-header" id="panelsStayOpen-headingFive" id="it-is-border-nonoe">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive"
-                id="single-check-section" id="it-is-border-nonoe"
+                id="single-check-section" 
                 >
                 college type
                 </button>
