@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Group from './../img/Group.png'
 import Play from './../img/Vector.png'
 import Star from './../img/Vector (3).png'
@@ -13,7 +13,7 @@ const Range = createSliderWithTooltip(Slider.Range)
 
 
 export const SearchPage = () => {
-
+  const [price, setPrice] = useState([0,1500000]) 
     const renderFilterSection=()=>{
         return(    <div className="searchPage_Filters_Mainoverflow_Conatiner">
 
@@ -154,17 +154,18 @@ export const SearchPage = () => {
     <form action="#">
        <Range
                       
-                      min={1}
+                      min={0}
                       max={1500000}
-                      defaultValue={[1,150000]}
+                      defaultValue={[0,1500000]}
                       tipFormatter={value=>`INR${value}`}
                       titProps={{
                         placement: 'top',
                         visible:true
                       }}
-                   
+                      value={price}
+                      onChange={price=>setPrice(price)}
 
-
+                      
                       
                       />
     <div className="container d-flex justify-content-between">
@@ -175,7 +176,7 @@ export const SearchPage = () => {
     <div className="container d-flex justify-content-between">
       <div className="my-3 ">
         <label for="text" className="form-label">Min</label>
-        <input type="text" className="form-control  " id="range-text" placeholder="₹ 0"/>
+        <input type="text" className="form-control  " id="range-text" placeholder={`₹ ${price[0]}`}/>
       </div>
       <div className="my-3 mx-2 " id="dast-id">
         <label for="text" className="form-label"></label>
@@ -183,7 +184,7 @@ export const SearchPage = () => {
       </div>
       <div className="my-3 ">
         <label for="text" className="form-label">Max</label>
-        <input type="text" className="form-control " id="range-text" placeholder="₹ 15,00,000"/>
+        <input type="text" className="form-control " id="range-text" placeholder={`₹ ${price[1]}`}/>
       </div>
     </div>
     </form>
