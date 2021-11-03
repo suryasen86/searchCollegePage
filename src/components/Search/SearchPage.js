@@ -22,7 +22,7 @@ export const SearchPage = () => {
     const renderFilterSection=()=>{
         return(    <div className="searchPage_Filters_Mainoverflow_Conatiner">
 
-        <div className="container my-3 d-flex justify-content-between">
+            <div className="container my-3 d-flex justify-content-between">
             <h3 className="searchPage_left-section-heading">Filters</h3>
             <button className="searchPage_left-section-atag"> Clear  All</button>
         </div>
@@ -153,10 +153,8 @@ export const SearchPage = () => {
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree"  id="searchPage_it-is-border-nonoe">
-                <div className="accordion-body" id="it-is-border-bottom">
-                  
-    
-    <form action="#">
+                <div className="accordion-body" id="it-is-border-bottom"> 
+                 <form action="#">
        <Range
                       
                       min={0}

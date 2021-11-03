@@ -17,10 +17,10 @@ function App() {
           <SearchPage/>
           </Route>
 
-          <Route path="/">
+          <Route path="/" exact>
        <BlogPage/>
           </Route>
-          <Route path="/blogserach">
+          <Route path="/blogserach" exact>
           <BlogSearchPage/>
           </Route>
     
