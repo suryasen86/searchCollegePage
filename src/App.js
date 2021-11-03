@@ -7,6 +7,7 @@ import {
  
 } from "react-router-dom";
 import { BlogSearchPage } from './components/BlogSearch/BlogSearchPage';
+import { BlogPage } from './components/BlogPage/BlogPage';
 function App() {
   return (
     <>
@@ -15,7 +16,11 @@ function App() {
           <Route path="/search">
           <SearchPage/>
           </Route>
+
           <Route path="/">
+       <BlogPage/>
+          </Route>
+          <Route path="/blogserach">
           <BlogSearchPage/>
           </Route>
     
