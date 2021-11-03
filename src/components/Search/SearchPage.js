@@ -1,11 +1,14 @@
+import './SearchPage.scss'
+
 import React,{useState} from 'react'
-import Group from './../img/Group.png'
-import Play from './../img/Vector.png'
-import Star from './../img/Vector (3).png'
-import Heart from './../img/Vector (1).png'
-import CollegeLogo from './../img/Rectangle 21.png'
-import Download from './../img/Vector (2).png'
-import Location from './../img/Vector (4).png'
+import Group from './img/Group.png'
+import Play from './img/Vector.png'
+import Star from './img/Vector (3).png'
+import Heart from './img/Vector (1).png'
+import CollegeLogo from './img/Rectangle 21.png'
+ 
+import Download from './img/Vector (2).png'
+import Location from './img/Vector (4).png'
 import Slider  from 'rc-slider';
 import 'rc-slider/assets/index.css';
 const {createSliderWithTooltip} = Slider;
@@ -14,6 +17,8 @@ const Range = createSliderWithTooltip(Slider.Range)
 
 export const SearchPage = () => {
   const [price, setPrice] = useState([0,1500000]) 
+
+  
     const renderFilterSection=()=>{
         return(    <div className="searchPage_Filters_Mainoverflow_Conatiner">
 
@@ -563,7 +568,7 @@ const renderAppliedFilters=()=>{
           <div className="row ">
             {/* filerleftsection */}
        
-        <div  className=" col-lg-3  col-sm-4  col-xs-12 ">
+        <div  className="col-lg-3  col-sm-4  col-xs-12 ">
        
            {renderFilterSection()}
   

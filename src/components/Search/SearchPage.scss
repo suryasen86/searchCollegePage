@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+ 
 
 p,h6{
     margin: 0;
@@ -525,8 +525,7 @@ color: #E3E3E3;
 
  
 
-@media only screen and  (max-device-width: 1366px) {
-    #searchPage_search-input{
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {    #searchPage_search-input{
         width:190px;
     }
 
